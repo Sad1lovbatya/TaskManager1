@@ -1,4 +1,3 @@
- 
 FactoryBot.define do
   factory :user do
     first_name
@@ -18,5 +17,5 @@ FactoryBot.define do
     factory :admin do
       type { 'Admin' }
     end
-  end 
+  end
 end
