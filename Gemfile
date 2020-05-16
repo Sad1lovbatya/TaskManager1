@@ -58,4 +58,4 @@ group :development, :test do
   gem 'rubocop'
 end
 
-gem "slim-rails"
+gem 'slim-rails'
