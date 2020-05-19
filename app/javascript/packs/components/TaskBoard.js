@@ -29,7 +29,7 @@ const data = {
 }
 
 const TaskBoard = () => {
-  return <Board initialBoard={data} />;
+  return <Board initialBoard={data} disableCardDrag />;
 };
 
 export default TaskBoard;
