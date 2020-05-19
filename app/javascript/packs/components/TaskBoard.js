@@ -1,3 +1,4 @@
+debugger;
 import React from 'react';
 import Board from '@lourenci/react-kanban';
 
