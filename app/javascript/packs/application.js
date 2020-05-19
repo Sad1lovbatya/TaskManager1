@@ -4,14 +4,15 @@
 // that code so it'll be compiled.
 
 import 'material-design-lite/material.js';
-require("@rails/ujs").start()
-require("@rails/activestorage").start()
-require("channels")
 
-import WebpackerReact from 'webpacker-react'
-import TaskBoard from './components/TaskBoard'
+require('@rails/ujs').start();
+require('@rails/activestorage').start();
+require('channels');
 
-WebpackerReact.setup({ TaskBoard })
+import WebpackerReact from 'webpacker-react';
+import TaskBoard from './components/TaskBoard';
+
+WebpackerReact.setup({ TaskBoard });
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
