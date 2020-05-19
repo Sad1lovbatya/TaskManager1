@@ -1,4 +1,3 @@
-# Note: You must restart bin/webpack-dev-server for changes to take effect
 
 default: &default
   source_path: app/javascript
@@ -34,9 +33,9 @@ default: &default
     - .woff2
 
   extensions:
-    - .jsx
     - .mjs
     - .js
+    - .jsx
     - .sass
     - .scss
     - .css
