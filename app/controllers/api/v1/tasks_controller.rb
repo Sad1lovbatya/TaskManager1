@@ -1,3 +1,6 @@
+ 
+# frozen_string_literal: true
+
 class Api::V1::TasksController < Api::V1::ApplicationController
   def index
     tasks = Task.all.
@@ -36,9 +39,9 @@ class Api::V1::TasksController < Api::V1::ApplicationController
     respond_with(task)
   end
 
-    private
+  private
 
   def task_params
-    params.require(:task).permit(:name, :description, :author_id, :assignee_id, :state_event)
+    params.require(:task).permit(:name, :description, :assignee_id, :state_event)
   end
-  end
+end

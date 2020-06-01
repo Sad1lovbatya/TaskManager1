@@ -37,8 +37,16 @@ const ColumnHeader = ({ column, onLoadMore }) => {
 };
 
 ColumnHeader.propTypes = {
-  column: PropTypes.shape().isRequired,
   onLoadMore: PropTypes.func.isRequired,
+  column: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    cards: PropTypes.array.isRequired,
+    meta: PropTypes.shape({
+      totalCount: PropTypes.number,
+      currentPage: PropTypes.number,
+    }),
+  }).isRequired,
 };
 
 export default ColumnHeader;
