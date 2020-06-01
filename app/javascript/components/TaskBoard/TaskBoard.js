@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import KanbanBoard from '@lourenci/react-kanban';
 import { propOr } from 'ramda';
-import useStyles from './useStyles';
-import AddIcon from '@material-ui/icons/Add';
-import Fab from '@material-ui/core/Fab';
+import AddButton from 'components/AddButton';
 import AddPopup from 'components/AddPopup';
 import EditPopup from 'components/EditPopup';
 import TaskForm from 'forms/TaskForm';
@@ -102,7 +100,6 @@ const TaskBoard = () => {
         alert(`Move failed! ${error.message}`);
       });
   };
-  const styles = useStyles;
 
   const MODES = {
     ADD: 'add',
@@ -167,9 +164,7 @@ const TaskBoard = () => {
       >
         {board}
       </KanbanBoard>
-      <Fab className={styles.addButton} color="primary" aria-label="add" onClick={handleOpenAddPopup}>
-        <AddIcon />
-      </Fab>
+      <AddButton onClick={handleOpenAddPopup} />
       {mode === MODES.ADD && <AddPopup onCreateCard={handleTaskCreate} onClose={handleClose} />}
       {mode === MODES.EDIT && (
         <EditPopup
