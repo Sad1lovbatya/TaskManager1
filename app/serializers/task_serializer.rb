@@ -12,4 +12,4 @@ class TaskSerializer < ApplicationSerializer
       }
     end
   end
-  end
+end
