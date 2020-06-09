@@ -4,4 +4,5 @@ class Web::BoardsControllerTest < ActionController::TestCase
   test 'should get new' do
     get :show
     assert_response :redirect
+  end
 end
