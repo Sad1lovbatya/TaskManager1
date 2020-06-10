@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 
 import 'material-design-lite/material.js';
+import 'stylesheets/application';
 
 require('@rails/ujs').start();
 require('@rails/activestorage').start();
