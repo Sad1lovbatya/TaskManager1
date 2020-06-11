@@ -55,6 +55,7 @@ gem 'state_machines'
 gem 'state_machines-activerecord'
 
 group :development, :test do
+  gem 'bullet'
   gem 'factory_bot_rails'
   gem 'rubocop'
 end
