@@ -24,3 +24,4 @@ Things you may want to cover:
 * ...
 
 [![Build Status](https://travis-ci.org/Sad1lovbatya/TaskManager1.svg?branch=master)](https://travis-ci.org/Sad1lovbatya/TaskManager1)
+[![Coverage Status](https://coveralls.io/repos/github/Sad1lovbatya/TaskManager1/badge.svg?branch=master)](https://coveralls.io/github/Sad1lovbatya/TaskManager1?branch=master)
